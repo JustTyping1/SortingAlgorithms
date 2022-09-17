@@ -14,18 +14,24 @@ class sortingalgorithms{
     values.Add(4);
     values.Add(1);
 
-    if(values[0] >= values[1]){
-      int val1 = values[0];
-      int val2 = values[1];
 
-      values[0] = val2;
-      values[1] = val1;
+    while ((values[0] < values[1] && values[1] < values[2] && values[2] < values[3] && values[3] < values[4]) != true){
+      int a = 0;
+      while(a < values.Count - 1){
+        if(values[a] >= values[a+1]){
+          int val1 = values[a];
+          int val2 = values[a+1];
 
-      foreach(var value in values){
-        Console.WriteLine(value);
+          values[a] = val2;
+          values[a+1] = val1;
+        }
+        a++;
       }
     }
-
+    values.Reverse();
+    for(int a = 0; a <= 4; a++){
+      Console.WriteLine(values[a]);
+    }
   }
 
   public static void Main(string[] args)
