@@ -6,25 +6,22 @@ using System.Threading.Tasks;
 
 class sortingalgorithms{
 
-  public bubblesort () {
-    Random rnd = new Random();
+  public static void bubblesort () {
     List<int> values = new List<int>();
-    for(int b; b <= 10; b++) {
-      values.Add(rnd.next(100));
+    values.Add(3);
+    values.Add(5);
+    values.Add(2);
+    values.Add(4);
+    values.Add(1);
+    foreach(var value in values) {
+      Console.WriteLine(value);
     }
-    int i = 0;
-    while (i <= values.length) {
-      if (values[i] > values[i + 1]) {
-        int val1 = values[i];
-        int val2 = values[i+1];
 
-      }
-      i += 1;
-    }
   }
 
   public static void Main(string[] args)
   {
+    sortingalgorithms.bubblesort();
   }
 
 }
