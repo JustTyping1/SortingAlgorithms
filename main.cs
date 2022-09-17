@@ -5,14 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 class sortingalgorithms{
+  public static void insertionsort () {
+    
+  }
 
   public static void bubblesort () {
     List<int> values = new List<int>();
-    values.Add(5);
-    values.Add(3);
-    values.Add(2);
+    values.Add(10);
     values.Add(4);
-    values.Add(1);
+    values.Add(16);
+    values.Add(9);
+    values.Add(47);
 
 
     while ((values[0] < values[1] && values[1] < values[2] && values[2] < values[3] && values[3] < values[4]) != true){
